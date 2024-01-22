@@ -1,0 +1,120 @@
+.taskcontainer{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    height: 500px;
+    overflow:auto;
+}
+
+.tasks{
+    display: flex;
+    border: none;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    width: 670px;
+    margin: 5px;
+    height: max-content;
+    padding: 5px;
+    padding-left: 10px;
+    justify-content:space-between;
+    align-items: center;
+    transition: .4s;
+}
+
+.emptytask{
+  display: flex;
+  border: none;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  width: 670px;
+  margin: 5px;
+  height: max-content;
+  justify-content:center;
+  align-items: center;
+  transition: .4s;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: rgb(97, 97, 97);
+}
+
+.emptytask>p{
+  margin: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.tasks>.buttons>p{
+    font-size: 23px;
+    margin: 0;  
+    text-transform: capitalize;  
+}
+
+
+.tasks>.buttons{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.completed{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete{
+    color: rgb(240, 61, 61);
+    font-size: 23px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.delete:hover{
+    color: red;
+}
+
+
+.star{
+  color: gold;
+  font-size: 26px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .4s;
+}
+
+.star:hover{
+  color: rgb(255, 194, 39);
+}
+
+
+.buttons2{
+  display: flex;
+  gap: 10px;
+}
